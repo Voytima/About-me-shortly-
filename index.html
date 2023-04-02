@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, course, css, tags" />
+    <meta name="description" content="Basic HTML course (made by Dmitry Voytik)" />
+    <title>HTML Course</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="html, course, css, tags">
-    <meta name="description" content="Basic HTML course (made by Dmitry Voytik)">
-    <title>HTML Course </title>
-</head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="./Photo_Dmitry_Voytik.jpg" alt="Dmitry Voytik photo" class="avatar" />
+        <div class="info-text">
+          <h1>Dmitry Voytik</h1>
 
-<body>
-    <img src="Photo_Dmitry_Voytik.jpg" width="350" alt="Dmitry Voytik photo">
-    <h1>Dmitry Voytik</h1>
+          <p>I'am a <strong>Python web-development</strong> student</p>
+          <p>I like <em>code, learn and coffee</em> <strong>^-^</strong></p>
 
-    <p>I'am a <strong>Python web-development</strong> student</p>
-    <p>I like <em>code, learn and coffee</em> <strong>^-^</strong></p>
+          <h4>Social networks list:</h4>
+          <a href="https://vk.com/feed" target="_blank">My Vk link</a>
+          |
+          <a href="https://t.me/D_Voytik" target="_blank">My telegram link</a>
+        </div>
+      </div>
 
-    <h4>Social networks list:</h4>
-    <a href="https://vk.com/feed" target="_blank">My Vk link</a>
-    |
-    <a href="https://t.me/D_Voytik" target="_blank">My telegram link</a>
+      <div class="card bg-green">
+        <h2>My hobbies:</h2>
+        <ol class="list">
+          <li>Travelling</li>
+          <li>PC games</li>
+          <li>Thriller films</li>
+        </ol>
+      </div>
+      <h2>Working experience</h2>
 
-    <h2>My hobbies:</h2>
-    <ul>
-        <li>Travelling</li>
-        <li>PC games</li>
-        <li>Thriller films</li>
-    </ul>
-
-    <h2>Working experience</h2>
-
-    <table>
-        <thead>
+      <div class="card bg-red">
+        <table class="table">
+          <tbody>
             <tr>
-                <th>Title</th>
-                <th>Position</th>
-                <th>Period</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Coca-Cola</td>
-                <td>Chemical Engineer</td>
-                <td>2013-2015</td>
-            </tr>
-            <tr>
-                <td>Lekpharm</td>
-                <td>Chemical Engineer</td>
-                <td>2015-2017</td>
+              <td>Coca-Cola</td>
+              <td>Chemical Engineer</td>
+              <td>2013-2015</td>
             </tr>
             <tr>
-                <td>PreOmics</td>
-                <td>Student Assistant</td>
-                <td>2017-2018</td>
+              <td>Lekpharm</td>
+              <td>Chemical Engineer</td>
+              <td>2015-2017</td>
             </tr>
             <tr>
-                <td>Minsk region CHEPH</td>
-                <td>Biologist</td>
-                <td>2021-now</td>
+              <td>PreOmics</td>
+              <td>Student Assistant</td>
+              <td>2017-2018</td>
             </tr>
-        </tbody>
-    </table>
+            <tr>
+              <td>Minsk region CHEPH</td>
+              <td>Biologist</td>
+              <td>2021-now</td>
+            </tr>
+            <tr>
+              <td>GeekBrains</td>
+              <td>Python WebDev</td>
+              <td>2021-now</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>Contact me</h2>
-    <form action="/">
-        <div>
+      <div class="card bg-yellow">
+        <h2>My courses</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://stepik.org/lesson/668595/step/1?unit=666704" target="_blank">Python for professionals</a>
+          </li>
+          <li><a href="https://stepik.org/learn/courses/archive" target="_blank">All courses</a></li>
+        </ul>
+      </div>
+
+      <form action="/" class="form">
+        <h2>Contact me</h2>
+
+        <div class="form-row">
+          <div class="form-group">
             <label for="name"><strong>Your name</strong></label>
-            <input type="text" id="name" placeholder="Enter your name">
-        </div>
-        <div>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
             <label for="email"><strong>Your email</strong></label>
-            <input type="email" id="email" placeholder="Enter your email">
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
         </div>
-        <div>
-            <label for="message"><strong>Your message:</strong></label>
-            <br>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
-        </div>
-        <button type="submit">Send message!</button>
-    </form>
-</body>
+        <div class="form-group">
+          <label for="message"><strong>Your message:</strong></label>
 
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+        </div>
+        <button type="submit" class="btn">Send message!</button>
+      </form>
+    </div>
+  </body>
 </html>
